@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background: #2b2f4a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 3em 2em;
+  text-align: center;
+  background: #f0f4f8;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.cta-button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  padding: 2em;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.feature-item {
+  background: #e3eaf0;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.pricing {
+  padding: 2em;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.price-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card {
+  background: white;
+  padding: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.contact {
+  padding: 2em;
+  text-align: center;
+}
+
+.footer {
+  background: #2b2f4a;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info p,
+.social-links a {
+  margin: 0.25em 0;
+  color: #ccc;
+}
+
+.social-links a {
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+}
